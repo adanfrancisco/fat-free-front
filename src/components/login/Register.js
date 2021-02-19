@@ -1,7 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 
 export const Register = () => {
+
+    const history = useHistory();
+    
+    const handleSubmit =(e)=>{
+        e.preventDefault();
+        
+        console.log('hice clic en submit')
+        history.push("/inicio");
+    }
+
     return (
         <div>
             {/* <div className="preloader">
@@ -17,8 +27,12 @@ export const Register = () => {
             >
                 <div className="login-box card">
                     <div className="card-body">
+
+
                         <form className="form-horizontal form-material"
-                            id="loginform" action="index.html">
+                            id="loginform" 
+                            onSubmit={handleSubmit}
+                            >
 
                             <Link to='/dashboard'>
 
@@ -31,7 +45,7 @@ export const Register = () => {
                                 <div className="col-xs-12">
                                     <input className="form-control"
                                         type="text" required=""
-                                        placeholder="Usuario" />
+                                        placeholder="Email" />
                                 </div>
                             </div>
                             <div className="form-group">
@@ -48,14 +62,22 @@ export const Register = () => {
                                         className="form-control"
                                         type="password"
                                         required=""
-                                        placeholder="Confirm Password" />
+                                        placeholder="Confirmar Clave" />
                                 </div>
                             </div>
                             <div className="form-group row">
                                 <div className="col-md-12">
                                     <div className="checkbox checkbox-primary p-t-0">
-                                        <input id="checkbox-signup" type="checkbox" />
-                                        <label for="checkbox-signup"> Acepto los Terminos
+                                        <input name="clave" id="checkbox-signup" type="checkbox" />
+                                        <label htmlFor="checkbox-signup"> Mostrar Clave
+                                 {/* <a href="#">Terms</a> */}
+                                        </label>
+                                    </div>
+                                </div>
+                                <div className="col-md-12">
+                                    <div className="checkbox checkbox-primary p-t-0">
+                                        <input name="terminos" id="checkbox-signup" type="checkbox" />
+                                        <label htmlFor="checkbox-signup"> Acepto los Terminos
                                  {/* <a href="#">Terms</a> */}
                                         </label>
                                     </div>

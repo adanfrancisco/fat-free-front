@@ -1,7 +1,18 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom';
 // import { Link } from 'react-router-dom'
 
 export const Recover = () => {
+
+    const history = useHistory();
+
+    const handleSubmit =(e)=>{
+        e.preventDefault();
+        
+        console.log('hice clic en submit')
+        history.push("/inicio");
+    }
+
     return (
         <div>
             {/* <div className="preloader">
@@ -19,7 +30,8 @@ export const Recover = () => {
                     <div className="card-body">
                         <form className="form-horizontal form-material" 
                         id="loginform" 
-                        action="index.html">
+                        onSubmit={handleSubmit}
+                        >
 
                             <h3 className="box-title m-b-20">Recupera Clave</h3>
                             <div className="form-group ">

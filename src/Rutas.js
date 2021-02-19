@@ -28,7 +28,7 @@ export const Rutas = () => {
     return (
 <Router>
       <Switch>
-        <Route path='/inicio'>Estas en  Inicio</Route>
+        <Route path='/inicio' component={Inicio} />
         <Route exact path="/" component={ Login } />
         <Route exact path="/recover" component={ Recover } />
         <Route exact path="/register" component={ Register } />

@@ -1,7 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
+
 
 export const Login = () => {
+    const history = useHistory();
+    
+    const handleSubmit =(e)=>{
+        e.preventDefault();
+        
+        console.log('hice clic en submit')
+        history.push("/inicio");
+    }
+
     return (
         <div>
             {/* <div className="preloader">
@@ -18,7 +28,8 @@ export const Login = () => {
                 <div className="login-box card">
                     <div className="card-body">
                         <form className="form-horizontal form-material"
-                            id="loginform" action="index.html">
+                            id="loginform" 
+                            onSubmit={handleSubmit}>
 
                             <Link to='/dashboard'>
 
@@ -26,31 +37,31 @@ export const Login = () => {
                                 <br />
                                 <img src="../assets/images/logo-text.png" alt="Home" />
                             </Link>
-
                             <div className="form-group m-t-40">
                                 <div className="col-xs-12">
                                     <input className="form-control"
                                         type="text" required=""
-                                        placeholder="Usuario" />
+                                        placeholder="Email" />
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <div class="col-xs-12">
-                                    <input class="form-control"
+                            
+                            <div className="form-group">
+                                <div className="col-xs-12">
+                                    <input className="form-control"
                                         type="password"
                                         required=""
                                         placeholder="Clave" />
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <div class="col-md-12">
+                            <div className="form-group row">
+                                <div className="col-md-12">
                                     <div
                                         className="checkbox checkbox-primary pull-left p-t-0">
                                         <input
                                             id="checkbox-signup"
                                             type="checkbox"
                                             className="filled-in chk-col-light-blue" />
-                                        <label for="checkbox-signup">
+                                        <label htmlFor="checkbox-signup">
                                             Recuerdame
                                                  </label>
                                     </div>
