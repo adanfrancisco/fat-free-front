@@ -68,20 +68,19 @@ export const Register = () => {
                             <div className="form-group row">
                                 <div className="col-md-12">
                                     <div className="checkbox checkbox-primary p-t-0">
-                                        <input name="clave" id="checkbox-signup" type="checkbox" />
-                                        <label htmlFor="checkbox-signup"> Mostrar Clave
+                                        <input name="clave" id="checkbox-clave" type="checkbox" />
+                                        <label htmlFor="checkbox-clave"> Mostrar Clave
                                  {/* <a href="#">Terms</a> */}
                                         </label>
                                     </div>
                                 </div>
-                                <div className="col-md-12">
+                                {/* <div className="col-md-12">
                                     <div className="checkbox checkbox-primary p-t-0">
                                         <input name="terminos" id="checkbox-signup" type="checkbox" />
                                         <label htmlFor="checkbox-signup"> Acepto los Terminos
-                                 {/* <a href="#">Terms</a> */}
                                         </label>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="form-group text-center m-t-20">
                                 <div className="col-xs-12">
