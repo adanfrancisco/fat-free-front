@@ -33,7 +33,7 @@ export const Rutas = () => {
 <Router>
       <Switch>
         <Route exact path="/" component={ Login } />
-        <PrivateRoutes path='/inicio' component={Inicio} />
+        <Route path='/inicio' component={Inicio} />
         <Route path="/recover" component={ Recover } />
         <Route path="/register" component={ Register } />
 

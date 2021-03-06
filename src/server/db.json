@@ -1,0 +1,32 @@
+{
+  "inventory": [
+    {
+      "id": 23618812,
+      "apellido": "Jonshon",
+      "nombres": "Javier",
+      "tr1": "6",
+      "tr2": "80"
+    },
+    {
+      "id": 26536728,
+      "apellido": "CCloterax",
+      "nombres": "Victoria",
+      "tr1": "5",
+      "tr2": "12"
+    },
+    {
+      "id": 11223453,
+      "apellido": "Impala",
+      "nombres": "Cuarteto",
+      "tr1": 8,
+      "tr2": 20
+    },
+    {
+      "id": 45678876,
+      "apellido": "Sunalga",
+      "nombres": "Ortensia",
+      "tr1": 9,
+      "tr2": 20
+    }
+  ]
+}
