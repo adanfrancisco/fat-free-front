@@ -8,7 +8,8 @@ import {
         } from 'react-router-dom'
 import { Inicio } from './components/dashboard/Inicio'
 
-import { Login } from './components/login/Login'
+import { LoginGoogle } from './components/login/LoginGoogle'
+//import { Login } from './components/login/Login'
 import { Recover } from './components/login/Recover'
 import { Register } from './components/login/Register'
 
@@ -29,7 +30,7 @@ export const Rutas = () => {
 <Router>
       <Switch>
         <Route path='/inicio'>Estas en  Inicio</Route>
-        <Route exact path="/" component={ Login } />
+        <Route exact path="/" component={ LoginGoogle } />
         <Route exact path="/recover" component={ Recover } />
         <Route exact path="/register" component={ Register } />
 

@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export const Register = () => {
+    
+
     return (
         <div>
             {/* <div className="preloader">
@@ -51,16 +53,16 @@ export const Register = () => {
                                         placeholder="Confirm Password" />
                                 </div>
                             </div>
-                            <div className="form-group row">
+                            {/* <div className="form-group row">
                                 <div className="col-md-12">
                                     <div className="checkbox checkbox-primary p-t-0">
                                         <input id="checkbox-signup" type="checkbox" />
-                                        <label for="checkbox-signup"> Acepto los Terminos
+                                        <label htmlFor="checkbox-signup"> Acepto los Terminos */}
                                  {/* <a href="#">Terms</a> */}
-                                        </label>
+                                       {/*  </label>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="form-group text-center m-t-20">
                                 <div className="col-xs-12">
                                     <button className="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light"

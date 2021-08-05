@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 // import { Link } from 'react-router-dom'
 
 export const Recover = () => {
@@ -46,7 +47,16 @@ export const Recover = () => {
                                         className="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light"
                                         type="submit">Recupera</button>
                                 </div>
+                            <div>
+                            <Link to='/'
+                                        id="to-recover"
+                                        className="text-dark pull-right">
+                                        <i className="fa fa-lock m-r-5"></i>
+                                        Iniciar Sesion
+                                    </Link>
                             </div>
+                            </div>
+                            
                         </form>
                     </div>
                 </div>
